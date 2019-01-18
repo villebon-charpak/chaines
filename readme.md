@@ -25,7 +25,8 @@ ma_chaine2 = "de ligne !"
 ma_chaine3 = """Un texte mis entre triples guillemets peut contenir des
 sauts
 de lignes."""
-``
+```
+
 
 On peut ne rien mettre entre les symboles d'ouverture et fermeture, on crée alors une chaîne vide :
 
@@ -58,14 +59,16 @@ print(ma_chaine1 + ma_chaine2)
 
 On peut multiplier une chaîne de caractères par un entier pour la répéter plusieurs fois :
 
-```print("All work and no play makes Jack a dull boy.\n" * 10)
+```python
+print("All work and no play makes Jack a dull boy.\n" * 10)
 ```
 
 ### `input`
 
 la fonction `input` permet de demander à l'utilisateur de saisir une chaîne de caractères. Le programme attend alors que l'utilisateur tape du texte au clavier. L'éxecution du programme reprend dès que l'utilisateur appuie sur la touche entrée :
 
-```ma_chaine4 = input("Veuillez saisir du texte : ")
+```python
+ma_chaine4 = input("Veuillez saisir du texte : ")
 print("Tu as tapé : " + ma_chaine4)
 ```
 
@@ -205,7 +208,7 @@ print(chr(97)) # a
 
 ## Le chiffre de César
 
-En cryptographie, le chiffrement par décalage, aussi connu comme le **chiffre de César**, est une méthode de chiffrement qui fut utilisée par Jules César dans ses correspondances secrètes. Le texte chiffré s'obtient simplement en remplaçant chaque lettre du texte en clair par une lettre à distance fixe, toujours du même côté, dans l'ordre de l'alphabet. Par exemple avec un décalage de 3 vers la droite, A est remplacé par D, B devient E, et ainsi de suite. Ainsi, pour un décalage de 3, le message `'comunicationsecrete'` devient `'frpxqlfdwlrqvhfuhwh'`.
+En cryptographie, le chiffrement par décalage, aussi connu comme le **chiffre de César**, est une méthode de chiffrement qui fut utilisée par Jules César dans ses correspondances secrètes. Le texte chiffré s'obtient simplement en remplaçant chaque lettre du texte en clair par une lettre à distance fixe, toujours du même côté, dans l'ordre de l'alphabet. Par exemple avec un décalage de 3 vers la droite, A est remplacé par D, B devient E, et ainsi de suite. Ainsi, pour un décalage de 3, le message `'communicationsecrete'` devient `'frppxqlfdwlrqvhfuhwh'`.
 
 Dans notre implémentation, on effectuera le décalage sur l'ensemble de la table de caractères Unicode, et pas juste les lettres. Cela nous permet de ne laisser aucun symbole en clair. La table est suffisamment grande pour qu'on ne se posera pas le problème de ce qu'il se passe pour les caractères à la fin de la table. À titre d'exemple, pour un décalage de 3, le message `'un message avec des espaces'` devient `'xq#phvvdjh#dyhf#ghv#hvsdfhv'`.
 
