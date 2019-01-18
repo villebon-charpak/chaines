@@ -17,7 +17,7 @@ Tous les exemples suivants sont contenus dans le fichier chaines.py du repositor
 
 ## Définir une chaîne
 
-Pour définir une chaîne de caractères dans python, on peut taper une séquence de symboles délimitée au début et à la fin par des guillemets simples ', des  guillements ", ou des triples guillemets """ :
+Pour définir une chaîne de caractères dans python, on peut taper une séquence de symboles délimitée au début et à la fin par des guillemets simples ', des  guillemets ", ou des triples guillemets """ :
 
 ```python
 ma_chaine1 = 'Je ne saute pas '
@@ -28,7 +28,7 @@ de lignes."""
 ```
 
 
-On peut ne rien mettre entre les symboles d'ouverture et fermeture, on crée alors une chaîne vide :
+Si on ne rien mettre entre les symboles d'ouverture et fermeture, on crée alors une chaîne vide :
 
 ```python
 chaine_vide = '' # une chaîne de caractères qui ne contient aucun caractère !
