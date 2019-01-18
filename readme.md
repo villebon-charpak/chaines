@@ -29,7 +29,8 @@ de lignes."""
 
 On peut ne rien mettre entre les symboles d'ouverture et fermeture, on crée alors une chaîne vide :
 
-```chaine_vide = '' # une chaîne de caractères qui ne contient aucun caractère !
+```python
+chaine_vide = '' # une chaîne de caractères qui ne contient aucun caractère !
 ```
 
 
